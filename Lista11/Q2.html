@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<body>
+    <script>
+        const opcao = Number(prompt('1 - Poupança\n2 - Fundo de renda fixa\nEscolha uma opção:'))
+        const valor = Number(prompt('Digite o valor do investimneto:'))
+        var valorDescontado
+        if(opcao === 1){
+            valorDescontado = valor + (valor * 0.05)
+            alert(`Novo valor com o investimento: ${valorDescontado}`)
+        }else if(opcao === 2){
+            valorDescontado = valor + (valor * 0.1)
+            alert(`Novo valor com o investimento: ${valorDescontado}`)
+        }else{
+            alert('Opção inválida')
+        }
+    </script>
+</body>
+</html>
